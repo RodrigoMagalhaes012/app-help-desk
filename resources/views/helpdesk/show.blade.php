@@ -12,7 +12,7 @@
 </div>
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Descrição </label>
-    <textarea class="form-control" id="description" name="description" rows="3" value="{{ $helpdeskCall->description }}" disabled></textarea>
+    <textarea class="form-control" id="description" name="description" rows="3" disabled>{{ $helpdeskCall->description }}</textarea>
 </div>
 
 <form action="{{ route('helpdesk.destroy', $helpdeskCall->id) }}" method="POST">
