@@ -56,7 +56,7 @@ swap=2GB
 https://www.docker.com/get-started/
 ```
 
-6 - Dentro da pasta do projeto execute o comando para subir o container do projeto
+7 - Dentro da pasta do projeto execute o comando para subir o container do projeto
 
 ```sh
  docker-compose up --build -d

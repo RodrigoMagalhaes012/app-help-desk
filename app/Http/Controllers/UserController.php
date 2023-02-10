@@ -42,20 +42,9 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-
-
-
-
-        // $this->model->hasColumn('email');
-        // dd($request->all());
-
-
         $data = $request->all();
 
-
         $data['password'] = bcrypt($request->password);
-        // $data['email'] = $request->email;
-
         $user = $this->model->create($data);
 
         return redirect()->route('users.index');
